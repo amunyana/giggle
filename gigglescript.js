@@ -16,8 +16,8 @@ const songs = [
   {
     title: 'Giggle',
     artist: 'Maya-Marie',
-    coverPath: 'assets/images/Almiraj.png',
-    discPath: 'assets/music/giggle.mp3',
+    coverPath: 'Almiraj.png',
+    discPath: 'giggle.mp3',
     duration: '0:01',
   },
 ];
@@ -119,7 +119,7 @@ play.addEventListener('click', playPauseMedia);
 disc.addEventListener('play', updatePlayPauseIcon);
 disc.addEventListener('pause', updatePlayPauseIcon);
 disc.addEventListener('timeupdate', updateProgress);
-disc.addEventListener('ended', gotoNextSong.bind(null, true));
+disc.addEventListener('ended');
 
 // Go to next song when next button clicked
 prev.addEventListener('click', gotoPreviousSong);
